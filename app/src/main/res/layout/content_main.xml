@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAC37F"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <TextView
+        android:id="@+id/addrHeadline"
+        android:layout_width="245dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:outlineProvider="background"
+        android:text="@string/current_address"
+        android:textColor="#7A2105"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/addrHead"
+        android:layout_width="102dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_textview"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:padding="2sp"
+        android:paddingStart="4sp"
+        android:paddingEnd="4sp"
+        android:text="@string/_2000"
+        android:textColor="#591F0D"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toEndOf="@+id/addrHeadline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/codingArea"
+        android:layout_width="349dp"
+        android:layout_height="326dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/code_area"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/write_your_code_here"
+        android:inputType="textMultiLine"
+        android:padding="20sp"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addrHeadline"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/debugBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/debug"
+        app:layout_constraintBaseline_toBaselineOf="@+id/runBut"
+        app:layout_constraintEnd_toStartOf="@+id/runBut"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/runBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="80dp"
+        android:text="@string/run"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codingArea" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/debugBut">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/responseArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/code_area"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/response_will_be_shown_here"
+                android:inputType="textMultiLine"
+                android:padding="20sp"
+                android:textColor="#651B1B"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addrHeadline"
+                android:autofillHints="" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

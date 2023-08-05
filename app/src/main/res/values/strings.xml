@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">8085 Simulator</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="write_your_code_here">Write your code here...</string>
+    <string name="current_address">Current Address:</string>
+    <string name="run">Run</string>
+    <string name="debug">Debug</string>
+    <string name="response_will_be_shown_here">Response will be shown here...</string>
+    <string name="_2000">2000</string>
+</resources>
